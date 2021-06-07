@@ -1,0 +1,22 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "Is a responsive website built for traveling in oreder to learn new CSS tricks",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abdelrahman-osama793/WanderLust.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abdelrahman-osama793/WanderLust/issues"
+  },
+  "homepage": "https://github.com/abdelrahman-osama793/WanderLust#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
