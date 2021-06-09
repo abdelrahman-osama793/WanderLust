@@ -53,3 +53,32 @@
     animation-fill-mode: backwards;
   }
 }
+
+.text-button {
+  &:link,
+  &:visited {
+    color: $primary-light-color;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid $primary-light-color;
+    padding: 5px;
+    font-size: 1.5rem;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      rgba($primary-dark-color, 0.7),
+      rgba($primary-light-color, 0.9)
+    );
+    color: $white-color;
+    box-shadow: 0 1rem 2rem rgba($black-color, 0.2);
+    transform: translateY(-0.3rem);
+  }
+
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba($black-color, 0.2);
+  }
+}

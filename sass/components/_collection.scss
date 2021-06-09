@@ -1,0 +1,46 @@
+.collection {
+  position: relative;
+
+  &__photos {
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba($black-color, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 5;
+    transition: all 0.3s;
+    outline-offset: 1.5rem;
+
+    &--p1 {
+      left: 22%;
+      top: 1rem;
+      animation: moveInFromTop 2s;
+    }
+    &--p2 {
+      left: 0;
+      top: 8rem;
+      animation: moveInFromLeft 2s;
+    }
+    &--p3 {
+      right: 0;
+      top: 12rem;
+      animation: moveInFromRight 2s;
+    }
+    &--p4 {
+      left: 20%;
+      top: 18rem;
+      animation: moveInFromBottom 2s;
+    }
+
+    &:hover {
+      transform: scale(1.2) translateY(-0.2rem);
+      box-shadow: 0 2.5rem 4rem rgba($black-color, 0.6);
+      z-index: 10;
+      outline: 1.25rem solid $primary-light-color;
+    }
+  }
+
+  &:hover &__photos:not(:hover) {
+    transform: scale(0.9);
+    filter: blur(2px);
+  }
+}

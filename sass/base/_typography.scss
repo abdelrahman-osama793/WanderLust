@@ -18,7 +18,7 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
-    animation: moveInFromLeft 2s;
+    animation: moveInFromLeft 2s ;
     margin-left: 1.2rem;
   }
 
@@ -28,5 +28,39 @@ body {
     font-weight: 700;
     letter-spacing: 1.26rem;
     animation: moveInFromRight 2s;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    $primary-light-color,
+    $primary-dark-color
+  );
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2.5px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(5deg) scale(1.08);
+    text-shadow: 0.5rem 1rem 2rem rgba($black-color, 0.5);
+  }
+}
+
+.heading-quotes {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  &:not(:last-child) {
+    margin-bottom: 2rem;
   }
 }
