@@ -35,6 +35,15 @@
     }
   }
 
+  &--green {
+    background-color: $primary-light-color;
+    color: $white-color;
+
+    &::after {
+      background-color: $primary-light-color;
+    }
+  }
+
   &::after {
     content: "";
     display: inline-block;

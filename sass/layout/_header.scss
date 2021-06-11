@@ -9,6 +9,7 @@
     url(../Images/header_Img.jpg);
   background-size: cover;
   background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
   // animation: headerAnimation 1s;
 
