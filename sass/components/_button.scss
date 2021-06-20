@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -9,6 +10,9 @@
     border-radius: 10rem;
     position: relative;
     /* margin-right: 6rem; */
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -21,7 +25,8 @@
     }
   }
 
-  &:active {
+  &:active, &:focus{
+    outline: none;
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($black-color, 0.2);
   }
@@ -35,7 +40,7 @@
     }
   }
 
-  &--green {
+  &--purple {
     background-color: $primary-light-color;
     color: $white-color;
 
