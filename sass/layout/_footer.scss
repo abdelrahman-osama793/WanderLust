@@ -1,0 +1,78 @@
+.footer {
+  background-color: $dark-grey-color-2;
+  padding: 5rem 0;
+  font-size: 1.4rem;
+  color: $light-grey-color;
+
+  &__logo {
+    width: 7rem;
+    height: auto;
+    transition: all 1s;
+    &:hover {
+      transform: rotate(360deg) scale(1.3);
+    }
+  }
+
+  &__nav--header {
+    color: $light-grey-color;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: block;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $light-grey-color;
+      background-color: $dark-grey-color-2;
+      text-decoration: none;
+      text-transform: capitalize;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $primary-light-color;
+      box-shadow: 0 1rem 2rem rgba($black-color, 0.4);
+      transform: rotate(5deg) scale(1.2);
+    }
+  }
+
+  &__social--links {
+    // padding: 0.45rem;
+    justify-content: center;
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    background-color: grey;
+    margin: 1rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 50%;
+    color: $white-color;
+    font-size: 2rem;
+    transition: all 0.3s;
+
+    &:hover {
+      background: linear-gradient(
+        to right bottom,
+        $primary-dark-color,
+        $primary-light-color
+      );
+      box-shadow: 0 1rem 2rem rgba($black-color, 0.4);
+      transform: rotate(20deg) scale(1.3);
+    }
+  }
+
+  &__copyright {
+    border-top: 1px dashed $light-grey-color;
+    padding-top: 1rem;
+    width: 95%;
+  }
+}
