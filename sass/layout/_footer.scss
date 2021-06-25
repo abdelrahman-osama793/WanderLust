@@ -4,6 +4,11 @@
   font-size: 1.4rem;
   color: $light-grey-color;
 
+  @include respond__manager(tab-landscape) {
+    padding: 4rem;
+    text-align: center;
+  }
+
   &__logo {
     width: 7rem;
     height: auto;

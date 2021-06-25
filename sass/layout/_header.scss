@@ -11,7 +11,11 @@
   background-position: top;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 50% 100%, 0 75vh);
-  // animation: headerAnimation 1s;
+
+  @include respond__manager(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 100%, 0 85vh);
+  }
 
   &__logo_div {
     position: absolute;

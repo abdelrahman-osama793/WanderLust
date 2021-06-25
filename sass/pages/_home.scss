@@ -2,11 +2,14 @@
   background-color: $medium-grey-color;
   padding: 25rem 0;
   margin-top: -20vh;
+
+  @include respond__manager(tab-portrait) {
+    padding: 20rem 0;
+  }
 }
 
 .features-section {
   padding: 25rem 0;
-  // height: 95vh;
   margin-top: -10rem;
 
   background-image: linear-gradient(
@@ -23,18 +26,30 @@
   & > * {
     transform: skewY(-7deg);
   }
+
+  @include respond__manager(tab-portrait) {
+    padding: 15rem 0;
+  }
 }
 
 .tours-section {
   background-color: $medium-grey-color;
   padding: 20rem 0 10rem 0;
   margin-top: -10rem;
+
+  @include respond__manager(tab-portrait) {
+    padding: 15rem 0;
+  }
 }
 
 .stories-section {
   padding: 15rem 0;
   // background-color: $medium-grey-color;
   position: relative;
+
+  @include respond__manager(tab-portrait) {
+    padding: 10rem 0;
+  }
 }
 
 .booking-section {
@@ -44,6 +59,10 @@
     $primary-dark-color,
     $primary-light-color
   );
+
+  @include respond__manager(tab-portrait) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -59,10 +78,8 @@
   box-shadow: 0 1.5rem 4rem rgba($black-color, 0.2);
   height: 50rem;
 
-  &__form{
+  &__form {
     width: 50%;
     padding: 6rem;
-    
   }
 }
-

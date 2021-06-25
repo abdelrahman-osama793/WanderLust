@@ -1,9 +1,18 @@
 .row {
   max-width: $grid-width;
   margin: 0 auto;
-  
+
+  @include respond__manager(tab-portrait) {
+    max-width: 50rem;
+    padding: 0 2rem;
+  }
+
   &:not(:last-child) {
     margin-bottom: $vertical-gutter;
+
+    @include respond__manager(tab-portrait) {
+      margin-bottom: $small-vertical-gutter;
+    }
   }
 
   @include clearfix;
@@ -13,6 +22,15 @@
 
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
+
+      @include respond__manager(tab-portrait) {
+        margin-right: 0;
+        margin-bottom: $small-vertical-gutter;
+      }
+    }
+
+    @include respond__manager(tab-portrait) {
+      width: 100% !important;
     }
   }
 

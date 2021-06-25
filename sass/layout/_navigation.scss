@@ -4,22 +4,33 @@
   }
 
   &__button {
+    // display: none;
     background-color: $white-color;
     height: 5rem;
     width: 5rem;
     position: fixed;
-    top: 5rem;
+    top: 5.5rem;
     right: 5.5rem;
     border-radius: 10px;
     z-index: 100;
     box-shadow: 0 1rem 3rem rgba($black-color, 0.3);
     text-align: center;
     cursor: pointer;
+
+    @include respond__manager(tab-landscape) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond__manager(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
-    height: 4rem;
-    width: 4rem;
+    height: 3.5rem;
+    width: 3rem;
     border-radius: 10px;
     position: fixed;
     top: 5.5rem;
@@ -30,6 +41,16 @@
     );
     z-index: 50;
     transition: transform 0.8s;
+
+    @include respond__manager(tab-landscape) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond__manager(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
