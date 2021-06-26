@@ -8,6 +8,10 @@
   box-shadow: 0 1.5rem 4rem rgba($black-color, 0.15);
   transition: transform 0.2s;
 
+  @include respond__manager(tab-portrait) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 5rem;
     margin-bottom: 0.5rem;
@@ -20,6 +24,10 @@
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond__manager(tab-portrait) {
+      margin: 0px;
+    }
   }
 
   &:hover {
